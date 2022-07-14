@@ -46,7 +46,11 @@ char		*ft_strjoin(char const *s1, char const *s2);
 size_t		ft_strlen(const char *s);
 void		*ft_calloc(size_t count, size_t size);
 void		ft_bzero(void *s, size_t n);
-// char		*ft_strdup(const char *s1);
+void		env_paths(t_data *vars, char **env);
+void		cmd2(t_data *vars, char **argv);
+void		cmd1(t_data *vars, char **argv);
+void		exe_cmd2(t_data *vars, char **argv, char **env);
+void		exe_cmd1(t_data *vars, char **argv, char **env);
 
 
 # endif
